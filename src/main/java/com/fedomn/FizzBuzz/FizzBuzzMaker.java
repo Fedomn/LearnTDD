@@ -4,6 +4,12 @@ public class FizzBuzzMaker {
 
 
     public static String translate(int number) {
-        return "1";
+        if (number % 3 == 0) {
+            return "Fizz";
+        }
+        if (number % 5 == 0) {
+            return "Buzz";
+        }
+        return Integer.valueOf(number).toString();
     }
 }
