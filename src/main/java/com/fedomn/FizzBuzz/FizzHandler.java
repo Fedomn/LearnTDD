@@ -1,7 +1,17 @@
 package com.fedomn.FizzBuzz;
 
-/**
- * Created by fedomn on 2015/5/18.
- */
-public class FizzHandler {
+
+public class FizzHandler extends WordHandler {
+    public FizzHandler(WordHandler successor) {
+        super(successor);
+    }
+
+    @Override
+    public String handler(int number) {
+        if (number % 3 == 0) {
+            return "Fizz";
+        } else {
+            return successor.handler(number);
+        }
+    }
 }

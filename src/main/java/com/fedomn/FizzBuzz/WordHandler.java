@@ -1,7 +1,12 @@
 package com.fedomn.FizzBuzz;
 
-/**
- * Created by fedomn on 2015/5/18.
- */
-public class WordHandler {
+
+public abstract class WordHandler {
+    protected WordHandler successor;
+
+    public WordHandler(WordHandler successor) {
+        this.successor = successor;
+    }
+
+    public abstract String handler(int number);
 }
