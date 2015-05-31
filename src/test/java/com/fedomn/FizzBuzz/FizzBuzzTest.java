@@ -12,7 +12,7 @@ public class FizzBuzzTest {
 
 
     @Test
-    public void GIVEN_One_SHOULDE_SayOne() {
+    public void GIVEN_One_SHOULD_SayOne() {
         assertEquals("Failure - given 1 should say 1", "1", FizzBuzzMaker.translate(1));
     }
 
