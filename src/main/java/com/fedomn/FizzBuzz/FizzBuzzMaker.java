@@ -8,6 +8,7 @@ public class FizzBuzzMaker {
         WordHandler buzzHandler = new BuzzHandler(commonNumberHandler);
         WordHandler fizzHandler = new FizzHandler(buzzHandler);
         WordHandler fizzBuzzHandler = new FizzBuzzHandler(fizzHandler);
-        return fizzBuzzHandler.handler(number);
+        WordHandler whizzHandler = new WhizzHandler(fizzBuzzHandler);
+        return whizzHandler.handler(number);
     }
 }
